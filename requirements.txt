@@ -1,0 +1,23 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+python-dotenv>=1.0
+numpy
+pillow
+
+# Speech to text
+faster-whisper>=1.1
+# PyAV 19 removed an option faster-whisper 1.2.1 uses ("metadata_errors" error).
+av>=12,<19
+
+# PyTorch models: conversation summary, image restorer, text to image
+torch>=2.2
+transformers>=5.0
+diffusers>=0.36
+huggingface_hub>=1.32
+accelerate>=1.0
+safetensors
+
+# Running the training notebooks in VS Code
+matplotlib
+ipykernel
